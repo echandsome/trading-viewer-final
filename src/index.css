@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #000c14;
+  height: 100vh;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+
+.menu-container {
+  overflow-y: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.menu-container::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hidden::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.scrollbar-hidden::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+
+.scrollbar-hidden::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* For Firefox */
+.scrollbar-hidden {
+  scrollbar-width: none;
+}
+
+/* For IE and Edge (Legacy) */
+.scrollbar-hidden {
+  -ms-overflow-style: none;
+}
